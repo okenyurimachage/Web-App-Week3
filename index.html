@@ -27,27 +27,29 @@
         <!-- Div the used input elements -->
         <div class="descriptiondiv">
 
-            <input  type="text" onkeypress="return /[a-z]/i.test(event.key)" maxlength = "10"  placeholder="Item Name" class="item-name" id="item" >
+            <input type="text" onkeypress="return /[a-z]/i.test(event.key)" maxlength="10" placeholder="Item Name"
+                class="item-name" id="item">
             <br>
-            <input type="number" min="0" placeholder="Quantity" class="item-quantity" id="quant" > <br>
-            <textarea type="text" rows="4" cols="25" placeholder="Description" maxlength = "15" class="item-description" id="desc" ></textarea> <br>
-            <button type="button" class="add-button" >Add</button>
-            
+            <input type="number" min="0" placeholder="Quantity" class="item-quantity" id="quant"> <br>
+            <textarea type="text" rows="4" cols="25" placeholder="Description" maxlength="15" class="item-description"
+                id="desc"></textarea> <br>
+            <button type="button" class="add-button">Add</button>
+
         </div>
     </div>
-<!-- Div to display the shopping list  -->
-    <div class="container stylecontainer1">    
+    <!-- Div to display the shopping list  -->
+    <div class="container stylecontainer1">
 
         <div class="items-row">
-                <span class="item-header item-column">Item Name</span>
-                <span class="item-header item-column">Quantity</span>
-                <span class="item-header item-column">Description</span>
-            </div>
-        
+            <span class="item-header item-column">Item Name</span>
+            <span class="item-header item-column">Quantity</span>
+            <span class="item-header item-column">Description</span>
+        </div>
+
         <div class="shopping-items">
         </div>
     </div>
- 
-   </body>
+
+</body>
 
 </html>

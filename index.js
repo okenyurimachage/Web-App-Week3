@@ -12,7 +12,7 @@ if (document.readyState == 'loading') {
 
 /*
 
-use of for loop to add or remove items from shopping list
+use of for loop and arrays to add or remove items from shopping list
  
 
 */
@@ -24,24 +24,24 @@ function ready() {
         button.addEventListener('click', addToClicked)
     }
 
-     var removeItemButtons = document.getElementsByClassName('btn-danger')
+    var removeItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeItemButtons.length; i++) {
         var button = removeItemButtons[i]
         button.addEventListener('click', removeItem)
     }
 
-     
+
 
 }
 
- //  Event that occurs when remove button is clicked 
+//  Event (event handler) that occurs when remove button is clicked 
 function removeItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
-    
+
 }
 
-//Event that occurs when add button is clicked
+//Event (event handler) that occurs when add button is clicked
 
 function addToClicked(event) {
     var button = event.target
@@ -51,28 +51,28 @@ function addToClicked(event) {
     var description = shopItem.getElementsByClassName('item-description')[0].value
     if (itemname === "" || quantity === "" || description === "") {
         alert("Kindly input all values");
-        
+
         return false;
     }
     document.getElementById('item').value = "";
     document.getElementById('quant').value = "";
-    document.getElementById('desc').value = "";  
+    document.getElementById('desc').value = "";
 
-    addItemToShop(itemname,quantity,description)
+    addItemToShop(itemname, quantity, description)
 
-    
 
-     
+
+
 }
-   
-// Adds my shopping list items to their respective positions
 
-function addItemToShop(itemname, quantity,description ) {
+// Adds my shopping list items to their respective positions 
+
+function addItemToShop(itemname, quantity, description) {
     var itemRow = document.createElement('div')
     itemRow.classList.add('items-row')
     var shopItems = document.getElementsByClassName('shopping-items')[0]
-    
-        var itemRowContents = `
+
+    var itemRowContents = `
         <div class="item-column">
             <span style="width: 140px;">${itemname}</span>
             <span style="width: 140px;">${quantity}</span>
@@ -81,7 +81,7 @@ function addItemToShop(itemname, quantity,description ) {
         <div class="item-column">
                <button class="btn btn-danger" type="button">Remove</button>
         </div>`
-        itemRow.innerHTML = itemRowContents 
-   shopItems.append(itemRow)
-   itemRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeItem)
-     }
+    itemRow.innerHTML = itemRowContents
+    shopItems.append(itemRow)
+    itemRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeItem)
+}

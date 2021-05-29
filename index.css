@@ -1,3 +1,5 @@
+/*  All Styling grouped in respective category */
+
 * {
     box-sizing: border-box;
 }
@@ -123,7 +125,7 @@ input, textarea {
 }
 
 .btn-danger:hover {
-    background-color: #indianred;
+    background-color: indianred;
 }
 
 /* Output Display Styling */
