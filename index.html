@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Spectral&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+
+    <title> Week Three Webapp</title>
+
+</head>
+
+<body>
+    <h1>
+        My Shopping List
+    </h1>
+    <div class="container stylecontainer">
+        <svg viewBox="0 0 500 500" preserveAspectRatio="xMinYMin meet">
+            <path d="M0, 100 C150, 200 350,
+                0 500, 100 L500, 00 L0, 0 Z"></path>
+        </svg>
+
+        <!-- Div the used input elements -->
+        <div class="descriptiondiv">
+
+            <input  type="text" onkeypress="return /[a-z]/i.test(event.key)" maxlength = "10"  placeholder="Item Name" class="item-name" id="item" >
+            <br>
+            <input type="number" min="0" placeholder="Quantity" class="item-quantity" id="quant" > <br>
+            <textarea type="text" rows="4" cols="25" placeholder="Description" maxlength = "15" class="item-description" id="desc" ></textarea> <br>
+            <button type="button" class="add-button" >Add</button>
+            
+        </div>
+    </div>
+<!-- Div to display the shopping list  -->
+    <div class="container stylecontainer1">    
+
+        <div class="items-row">
+                <span class="item-header item-column">Item Name</span>
+                <span class="item-header item-column">Quantity</span>
+                <span class="item-header item-column">Description</span>
+            </div>
+        
+        <div class="shopping-items">
+        </div>
+    </div>
+ 
+   </body>
+
+</html>

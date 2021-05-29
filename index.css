@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+   
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(110deg, #cccbcb 40%, #ffffff 30%);
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+}
+
+svg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Input Display Styling */
+.container {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.stylecontainer {
+    width: 330px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 450px;
+    border-radius: 15px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(30,144,255 ,1 );
+    transition: 0.3s;
+}
+
+.stylecontainer1 {
+
+    width: 550px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 850px;
+    border-radius: 15px;
+    border: 5px solid #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(30,144,255 ,1 );
+    transition: 0.3s;
+}
+
+
+h1 {
+    color: dodgerblue;
+    margin-top: 300px; 
+    margin-left: 20px;
+    font-family: 'Spectral', cursive;
+}
+
+path {
+    stroke: none; 
+    fill: dodgerblue;
+}
+
+.descriptiondiv {
+    
+    padding: 30px;
+    margin-top: 100px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+input {
+	padding: 10px 15px;
+	font-size: 16px;
+    display: block;
+    outline: none;
+	
+}
+
+input, textarea {
+    
+    font-size: inherit;
+    font-family: inherit;
+    border: 2px solid dodgerblue;
+    border-radius: 15px;
+    outline: none;
+}
+
+/* Button Styling */
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.add-button {
+    font-size: inherit;
+    font-family: inherit;
+    padding: 10px 23px;
+    background-color: dodgerblue;
+    border-radius: 25px;
+    border: 0; 
+}
+
+.btn-danger {
+    color: white;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 10px;
+    background-color: #5b92e5;
+    border-radius: 20px;
+    border: 0; 
+}
+
+.btn-danger:hover {
+    background-color: #indianred;
+}
+
+/* Output Display Styling */
+
+.item-column {
+    display: flex;
+    align-items: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-right: 1.5em;
+    margin-top: 15px;
+    border-bottom: 2px dotted dodgerblue;
+}
+
+
+.item-header {
+    font-family: 'Spectral', cursive;
+    font-size: 20px;
+    color: dodgerblue;
+}
+
+.items-row {
+    display: flex;
+}
